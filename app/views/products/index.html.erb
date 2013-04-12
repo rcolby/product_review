@@ -17,7 +17,7 @@
     <td><a href='/reviews/<%= product.id %>'>Reviews</a></td>
     <td><%= product.description %></td>
     <td><img src="<%= product.image_url %>" alt="Image for <%= product.name%>" ></td>
-    <td><a href='/products/<%= product.id %>'>Detail</a></td>
+    <td><a href='/products/?=:product_id=<%= product.id %>'>Detail</a></td>
   </tr>
 <% end %>
 </table>

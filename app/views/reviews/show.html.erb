@@ -1,19 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<% if @reviews.size == 1 %>
+<% if @reviews.size == 0 %>
   <p>
-    <b>Body:</b>
-    <%= @review.body %>
-  </p>
-
-  <p>
-    <b>Rating:</b>
-    <%= @review.rating %>
-  </p>
-
-  <p>
-    <b>Product:</b>
-    <%= @product.name %>
+    No reviews for <%= @product.name %>.
   </p>
 
 <% else %> 
