@@ -1,5 +1,5 @@
 class Product < ActiveRecord::Base
-  attr_accessible :name, :price
+  attr_accessible :name, :price, :description, :image_url
 
   has_many :reviews
 

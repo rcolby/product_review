@@ -1,8 +1,5 @@
-<% if @product %>
-  <h1>New review of <%= @product.name %></h1>
-<% else %>
-  <h1>Write a new review</h1>
-<% end %>
+<h2>New review of <%= @product.name %></h2>
+
 
 <%= render 'form' %>
 
